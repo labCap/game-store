@@ -1,5 +1,5 @@
 import React from "react";
-import { GameItem } from "../../components/game-items";
+import { GameItem } from "../../components/game-item";
 import "./home-page.css";
 
 const GAMES = [
