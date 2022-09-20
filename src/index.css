@@ -24,3 +24,7 @@ a {
   text-decoration: none;
   color: #fff;
 }
+
+.secondary-text {
+  color: rgb(80, 82, 84);
+}
