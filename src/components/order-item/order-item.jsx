@@ -1,10 +1,16 @@
 import React from "react";
+import { AiOutlineCloseCircle } from "react-icons/ai";
 import { useDispatch } from "react-redux";
+import { deleteItemInCart } from "../../redux/cart/reducer";
 import { GameCover } from "../game-cover";
 import "./order-item.css";
 
 export const OrderItem = ({ game }) => {
   const dispatch = useDispatch();
+
+  const handleClick = () => {
+    dispatch(deleteItemInCart(game.id));
+  };
 
   return (
     <div className="order-item">
@@ -16,6 +22,11 @@ export const OrderItem = ({ game }) => {
       </div>
       <div className="order-item__price">
         <span>{game.price} uan</span>
+        <AiOutlineCloseCircle
+          size={"25"}
+          className="cart-item__delete-icon"
+          onClick={handleClick}
+        />
       </div>
     </div>
   );

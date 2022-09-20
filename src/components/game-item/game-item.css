@@ -9,11 +9,6 @@
   position: relative;
 }
 
-.game-item:not(:last-child) {
-  margin-bottom: 30px;
-  margin-right: 50px;
-}
-
 .game-item__title {
   font-size: 18px;
   font-weight: 700;

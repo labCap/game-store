@@ -13,9 +13,9 @@ function App() {
         <div className="App">
           <Header />
           <Routes>
-            <Route exect path="/" element={<HomePage />} />
-            <Route exect path="/app/:title" element={<GamePage />} />
-            <Route exect path="/order" element={<OrderPage />} />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/app/:title" element={<GamePage />} />
+            <Route path="/order" element={<OrderPage />} />
           </Routes>
         </div>
       </Router>

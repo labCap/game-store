@@ -1,5 +1,6 @@
 .order-item {
   display: flex;
+  align-items: center;
   margin-bottom: 30px;
 }
 .order-item__cover {
@@ -16,4 +17,15 @@
   font-size: 24px;
   font-weight: 700;
   margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .order-item {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .order-item__cover {
+    margin: 0;
+    width: 100%;
+  }
 }

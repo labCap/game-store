@@ -15,7 +15,7 @@ export const OrderPage = () => {
     <div className="order-page">
       <div className="order-page__left">
         {items.map((game) => (
-          <OrderItem game={game} />
+          <OrderItem game={game} key={game.id} />
         ))}
       </div>
       <div className="order-page__right">
